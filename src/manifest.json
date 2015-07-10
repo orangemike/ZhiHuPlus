@@ -1,0 +1,21 @@
+{
+  "name": "GoogleapisResRedirector",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "重定向ajax.googleapis.com和fonts.googleapis.com的资源请求到ajax/fonts.useso.com上",
+   "icons": {
+      "128": "logo/128.png",
+      "48": "logo/48.png",
+      "16": "logo/16.png"
+   },  
+  "permissions": ["webRequest", "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "web_accessible_resources": [],
+  "incognito":"spanning",
+  "offline_enabled":false
+}
